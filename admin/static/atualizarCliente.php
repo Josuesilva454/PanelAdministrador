@@ -2,7 +2,7 @@
 
 include 'conexao.php';
 
-$id = $_POST['id'];
+$id = $_POST['id_cliente'];
 $titulo = $_POST['titulo'];
 $descricao = $_POST['descricao'];
 
