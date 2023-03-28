@@ -3,7 +3,7 @@
 include 'conexao.php';
 
 $id = $_POST['id'];
-$nome = $_POST['titulo'];
+$nome = $_POST['nome'];
 
 
 
@@ -13,7 +13,7 @@ $inserir = mysqli_query($conexao,$sql);
 
 
 
-header('Location: cadastro_cliente.php?msg=1');
+header('Location: formCliente.php?msg=1');
 
 
 

@@ -2,17 +2,21 @@
 
 include 'conexao.php';
 
-$id = $_POST['id_cliente'];
-$titulo = $_POST['titulo'];
-$descricao = $_POST['descricao'];
+$id = $_POST['id'];
+$nome = $_POST['nome'];
+$mail = $_POST['mail'];
+$telefone = $_POST['telefone'];
 
 
-$sql = "UPDATE `cliente` SET `titulo`='$titulo', `descricao`='$descricao' WHERE id_cliente = $id";
+
+$sql = "UPDATE `cliente` SET `nome`='$nome',`email`='$mail',`telefone`='$telefone' WHERE id_cliente = $id";
 $inserir = mysqli_query($conexao,$sql);
 
 
 
-//header('Location: cadastro_cliente.php?msg=1');
+
+
+header('Location: formCliente.php?msg=1');
 
 
 
